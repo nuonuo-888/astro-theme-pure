@@ -4,7 +4,16 @@ English | [简体中文](./README-zh-CN.md)
 
 A simple, fast and powerful blog & document theme built by Astro.
 
-[![GitHub deployments](https://img.shields.io/github/deployments/cworld1/astro-theme-pure/production?style=flat&logo=vercel&label=vercel)](https://astro-pure.js.org/)
+## 🚀 Deploy
+
+[![Deploy to Tencent EdgeOne Pages](https://img.shields.io/badge/Deploy-Tencent%20EdgeOne%20Pages-006EFF?style=for-the-badge&logo=tencentqq&logoColor=white)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Fcworld1%2Fastro-theme-pure&output-directory=dist%2Fclient&build-command=npm+run+build&install-command=npm+install&origin_from=childtom)
+
+The one-click button above clones `cworld1/astro-theme-pure`, installs dependencies with `npm`, runs `npm run build`, and serves the generated `dist/client/` folder automatically on Tencent EdgeOne Pages.
+
+## 👁 Preview
+
+[![Preview](https://img.shields.io/badge/Preview-4ECCA3?style=for-the-badge&logo=globe&logoColor=white)](astro-theme-pure.edgeone.app)
+
 [![NPM Version](https://img.shields.io/npm/v/astro-pure?logo=npm&style=flat)](https://www.npmjs.com/package/astro-pure)
 [![GitHub Release](https://img.shields.io/github/v/release/cworld1/astro-theme-pure?include_prereleases&style=flat&label=template)](https://github.com/cworld1/astro-theme-pure/releases)
 [![GitHub License](https://img.shields.io/github/license/cworld1/astro-theme-pure?style=flat)](https://github.com/cworld1/astro-theme-pure/blob/main/LICENSE)
