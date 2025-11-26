@@ -6,9 +6,9 @@ A simple, fast and powerful blog & document theme built by Astro.
 
 ## 🚀 Deploy
 
-[![Deploy to Tencent EdgeOne Pages](https://img.shields.io/badge/Deploy-Tencent%20EdgeOne%20Pages-006EFF?style=for-the-badge&logo=tencentqq&logoColor=white)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Fcworld1%2Fastro-theme-pure&output-directory=dist%2Fclient&build-command=npm+run+build&install-command=npm+install&origin_from=childtom)
+[![Deploy to Tencent EdgeOne Pages](https://img.shields.io/badge/Deploy-Tencent%20EdgeOne%20Pages-006EFF?style=for-the-badge&logo=tencentqq&logoColor=white)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Fnuonuo-888%2Fastro-theme-pure&output-directory=dist%2Fclient&build-command=npm+run+build&install-command=npm+install&origin_from=childtom)
 
-The one-click button above clones `cworld1/astro-theme-pure`, installs dependencies with `npm`, runs `npm run build`, and serves the generated `dist/client/` folder automatically on Tencent EdgeOne Pages.
+The one-click button above clones `nuonuo-888/astro-theme-pure`, installs dependencies with `npm`, runs `npm run build`, and serves the generated `dist/client/` folder automatically on Tencent EdgeOne Pages.
 
 ## 👁 Preview
 
