@@ -26,8 +26,6 @@ The one-click button above clones `cworld1/astro-theme-pure`, installs dependenc
 
 ## Introduction
 
-Checkout [Demo Site →](https://astro-pure.js.org/)
-
 ### :fire: Features
 
 - [x] :rocket: Fast & high performance
