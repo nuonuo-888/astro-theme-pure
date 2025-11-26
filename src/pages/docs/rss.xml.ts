@@ -1,5 +1,4 @@
 import type { AstroGlobal, ImageMetadata } from 'astro'
-import { getImage } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import rss from '@astrojs/rss'
 import type { Root } from 'mdast'
@@ -33,7 +32,9 @@ const renderContent = async (post: CollectionEntry<'docs'>, site: URL) => {
           const promise = imagesGlob[imagePathPrefix]?.().then(async (res) => {
             const imagePath = res?.default
             if (imagePath) {
-              node.url = `${site}${(await getImage({ src: imagePath })).src.replace('/', '')}`
+              // Get image URL directly from ImageMetadata
+              const imageSrc = typeof imagePath === 'string' ? imagePath : imagePath.src
+              node.url = `${site}${imageSrc.replace('/', '')}`
             }
           })
           if (promise) promises.push(promise)

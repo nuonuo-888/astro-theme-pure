@@ -1,6 +1,5 @@
 ---
 import type { ImageMetadata } from 'astro'
-import { Image } from 'astro:assets'
 import type { HTMLTag, Polymorphic } from 'astro/types'
 
 import { cn } from 'astro-pure/utils'
@@ -30,6 +29,8 @@ if (!images[imagePath])
   throw new Error(
     `"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif,avif,webp}"`
   )
+const imageModule = await images[imagePath]()
+const imageSrc = typeof imageModule.default === 'string' ? imageModule.default : imageModule.default.src
 ---
 
 <Tag
@@ -41,8 +42,8 @@ if (!images[imagePath])
   href={href}
   target='_blank'
 >
-  <Image
-    src={images[imagePath]()}
+  <img
+    src={imageSrc}
     alt={altText ?? heading}
     class='absolute top-0 w-full object-contain opacity-60 transition-opacity group-hover:opacity-100 dark:opacity-35'
     loading='lazy'

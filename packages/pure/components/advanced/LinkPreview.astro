@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets'
-
 import { parseOpenGraph } from '../../plugins/link-preview'
 import { cn } from '../../utils'
 
@@ -36,10 +34,10 @@ const domain = meta?.url ? new URL(meta.url).hostname.replace('www.', '') : ''
             <source src={meta.video} type={meta.videoType} />
           </video>
         ) : meta.image ? (
-          <Image
-            class={cn('m-0 sm:max-w-60', zoomable && 'zoomable')}
+          <img
             src={meta.image}
             alt={meta.imageAlt || ''}
+            class={cn('m-0 sm:max-w-60', zoomable && 'zoomable')}
             width='1200'
             height='630'
           />

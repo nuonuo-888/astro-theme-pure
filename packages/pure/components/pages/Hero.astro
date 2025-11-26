@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets'
 import type { InferEntrySchema } from 'astro:content'
 
 import { FormattedDate, Icon } from '../user'
@@ -17,25 +16,36 @@ const {
 const dateTimeOptions: Intl.DateTimeFormatOptions = {
   month: 'short'
 }
+
+// Get the image URL - same logic as BlogPost.astro line 38-41
+const heroImageSrc = heroImage
+  ? typeof heroImage.src === 'string'
+    ? heroImage.src
+    : heroImage.src.src
+  : null
 ---
 
 {
-  heroImage && (
+  heroImage && heroImageSrc && (
     <div class='hero-image relative mb-6'>
-      <Image
+      <img
+        src={heroImageSrc}
         alt={heroImage.alt || title}
         class='cover-image relative z-10 h-auto w-full max-w-[65ch] rounded-2xl object-contain'
         fetchpriority='high'
         loading='eager'
-        {...heroImage}
+        width={heroImage.width}
+        height={heroImage.height}
       />
-      <Image
+      <img
+        src={heroImageSrc}
         alt='Blur image'
         fetchpriority='high'
         loading='eager'
         id='blurImage'
         class='absolute end-0 top-4 z-0 mt-0 h-full max-w-[65ch] rounded-3xl opacity-60 transition-opacity duration-300'
-        {...heroImage}
+        width={heroImage.width}
+        height={heroImage.height}
       />
     </div>
   )
