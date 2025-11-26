@@ -12,7 +12,7 @@ The one-click button above clones `nuonuo-888/astro-theme-pure`, installs depend
 
 ## 👁 Preview
 
-[PREVIEW](astro-theme-pure.edgeone.app)
+[![Preview](https://img.shields.io/badge/Preview-4ECCA3?style=for-the-badge&logo=globe&logoColor=white)](https://astro-theme-pure.edgeone.app/)
 
 [![NPM Version](https://img.shields.io/npm/v/astro-pure?logo=npm&style=flat)](https://www.npmjs.com/package/astro-pure)
 [![GitHub Release](https://img.shields.io/github/v/release/cworld1/astro-theme-pure?include_prereleases&style=flat&label=template)](https://github.com/cworld1/astro-theme-pure/releases)
